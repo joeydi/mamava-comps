@@ -40,28 +40,24 @@ export default function Features() {
                 trigger: "section.features",
                 start: "top top+=1",
                 end: "+=400.1%",
-                pin: ".features-wrap",
-                scrub: true,
+                pin: ".features-pin",
+                scrub: 1,
                 onEnter: function () {
-                    console.log("onEnter");
                     gsap.set("html", {
                         "scroll-snap-type": "y mandatory",
                     });
                 },
                 onEnterBack: function () {
-                    console.log("onEnterBack");
                     gsap.set("html", {
                         "scroll-snap-type": "y mandatory",
                     });
                 },
                 onLeave: function () {
-                    console.log("onLeave");
                     gsap.set("html", {
                         "scroll-snap-type": "none",
                     });
                 },
                 onLeaveBack: function () {
-                    console.log("onLeaveBack");
                     gsap.set("html", {
                         "scroll-snap-type": "none",
                     });
@@ -195,68 +191,70 @@ export default function Features() {
             <div id="assembly" className="panel panel-3"></div>
             <div id="maintenance" className="panel panel-4"></div>
             <div id="mobility" className="panel panel-5"></div>
-            <div className="container">
-                <div className="features-wrap">
-                    <div className="features-content">
-                        <div className="heading">
-                            <h1>Easy for Everybody</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna.
-                            </p>
+            <div className="features-pin">
+                <div className="container">
+                    <div className="features-wrap">
+                        <div className="features-content">
+                            <div className="heading">
+                                <h1>Easy for Everybody</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna.
+                                </p>
+                            </div>
+                            <div className="benefit benefit-1">
+                                <h2 onClick={clickHandler} data-href="#access">
+                                    <img src="/icon-access.svg" width="30px" height="30px" />
+                                    Access
+                                </h2>
+                                <ul>
+                                    <li>
+                                        Autonomous app-enabled entry for parents with Mamava’s Smart Access Technology or keyless
+                                        pin code.
+                                    </li>
+                                    <li>Streamlined and managed access for facilities.</li>
+                                </ul>
+                            </div>
+                            <div className="benefit benefit-2">
+                                <h2 onClick={clickHandler} data-href="#assembly">
+                                    <img src="/icon-assembly.svg" width="30px" height="30px" />
+                                    Assembly
+                                </h2>
+                                <ul>
+                                    <li>Assembles and ready for use in a few hours.</li>
+                                    <li>Eliminates permitting and construction disruption.</li>
+                                    <li>Professional install service available.</li>
+                                </ul>
+                            </div>
+                            <div className="benefit benefit-3">
+                                <h2 onClick={clickHandler} data-href="#maintenance">
+                                    <img src="/icon-maintenance.svg" width="30px" height="30px" />
+                                    Maintenance
+                                </h2>
+                                <ul>
+                                    <li>Solid surfaces and nonabsorbent materials make for quick clean up.</li>
+                                    <li>Mamava Service Plans provide extra peace of mind.</li>
+                                </ul>
+                            </div>
+                            <div className="benefit benefit-4">
+                                <h2 onClick={clickHandler} data-href="#mobility">
+                                    <img src="/icon-mobility.svg" width="30px" height="30px" />
+                                    Mobility
+                                </h2>
+                                <ul>
+                                    <li>Built-in caster wheels make it easy to move pod as needed. </li>
+                                    <li>Disassemble and store pod when not in use.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className="benefit benefit-1">
-                            <h2 onClick={clickHandler} data-href="#access">
-                                <img src="/icon-access.svg" width="30px" height="30px" />
-                                Access
-                            </h2>
-                            <ul>
-                                <li>Managed access for facilities</li>
-                                <li>App-enabled entry with Mamava’s Smart Access Technology</li>
-                                <li>Keyless pin code lock</li>
-                            </ul>
-                        </div>
-                        <div className="benefit benefit-2">
-                            <h2 onClick={clickHandler} data-href="#assembly">
-                                <img src="/icon-assembly.svg" width="30px" height="30px" />
-                                Assembly
-                            </h2>
-                            <ul>
-                                <li>Managed access for facilities</li>
-                                <li>App-enabled entry with Mamava’s Smart Access Technology</li>
-                                <li>Keyless pin code lock</li>
-                            </ul>
-                        </div>
-                        <div className="benefit benefit-3">
-                            <h2 onClick={clickHandler} data-href="#maintenance">
-                                <img src="/icon-maintenance.svg" width="30px" height="30px" />
-                                Maintenance
-                            </h2>
-                            <ul>
-                                <li>Managed access for facilities</li>
-                                <li>App-enabled entry with Mamava’s Smart Access Technology</li>
-                                <li>Keyless pin code lock</li>
-                            </ul>
-                        </div>
-                        <div className="benefit benefit-4">
-                            <h2 onClick={clickHandler} data-href="#mobility">
-                                <img src="/icon-mobility.svg" width="30px" height="30px" />
-                                Mobility
-                            </h2>
-                            <ul>
-                                <li>Managed access for facilities</li>
-                                <li>App-enabled entry with Mamava’s Smart Access Technology</li>
-                                <li>Keyless pin code lock</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="features-media">
-                        <div className="media-wrap">
-                            <img className="media-1" src="/easy-1.jpg" alt="" />
-                            <img className="media-2" src="/easy-2.jpg" alt="" />
-                            <img className="media-3" src="/easy-3.jpg" alt="" />
-                            <img className="media-4" src="/easy-4.jpg" alt="" />
-                            <img className="media-5" src="/easy-5.jpg" alt="" />
+                        <div className="features-media">
+                            <div className="media-wrap">
+                                <img className="media-1" src="/easy-1.jpg" alt="" />
+                                <img className="media-2" src="/easy-2.jpg" alt="" />
+                                <img className="media-3" src="/easy-3.jpg" alt="" />
+                                <img className="media-4" src="/easy-4.jpg" alt="" />
+                                <img className="media-5" src="/easy-5.jpg" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

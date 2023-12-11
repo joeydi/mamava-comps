@@ -54,6 +54,7 @@ main {
 }
 
 .container {
+    position: relative;
     width: 92vw;
     max-width: 1790px;
     margin: 0 auto;
@@ -64,7 +65,7 @@ section.hero {
 }
 
 section.usp-features {
-    margin: 100px 0;
+    margin: 100px 0 0;
 }
 
 section.features {
@@ -95,6 +96,14 @@ section.features {
     p {
         margin: 0;
         font-size: vwmin(22px);
+    }
+
+    .features-pin {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
     }
 
     .features-wrap {
@@ -132,7 +141,7 @@ section.features {
         }
 
         .benefit {
-            margin-bottom: vwmin(40px);
+            margin-bottom: vwmin(10px);
 
             h2 {
                 display: flex;
