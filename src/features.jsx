@@ -14,7 +14,7 @@ export default function Features() {
         gsap.to(window, {
             scrollTo: href,
             duration: 1,
-            ease: "power2.out",
+            ease: "expo.out",
         });
     };
 
@@ -87,6 +87,17 @@ export default function Features() {
         );
 
         timeline.to(
+            ".progress",
+            {
+                yPercent: 122,
+                scaleY: 1,
+                ease: "power2.out",
+                duration: 1,
+            },
+            0
+        );
+
+        timeline.to(
             ".media-wrap .media-3",
             {
                 yPercent: 0,
@@ -113,6 +124,17 @@ export default function Features() {
                 height: "auto",
                 ease: "none",
                 duration: 0.5,
+            },
+            1
+        );
+
+        timeline.to(
+            ".progress",
+            {
+                yPercent: 156,
+                scaleY: 1.1,
+                ease: "power2.out",
+                duration: 1,
             },
             1
         );
@@ -149,6 +171,17 @@ export default function Features() {
         );
 
         timeline.to(
+            ".progress",
+            {
+                yPercent: 182,
+                scaleY: 0.9,
+                ease: "power2.out",
+                duration: 1,
+            },
+            2
+        );
+
+        timeline.to(
             ".media-wrap .media-5",
             {
                 yPercent: 0,
@@ -179,6 +212,17 @@ export default function Features() {
             3
         );
 
+        timeline.to(
+            ".progress",
+            {
+                yPercent: 210,
+                scaleY: 0.9,
+                ease: "power2.out",
+                duration: 1,
+            },
+            3
+        );
+
         timeline.set("html", {
             "scroll-snap-type": "none",
         });
@@ -195,6 +239,7 @@ export default function Features() {
                 <div className="container">
                     <div className="features-wrap">
                         <div className="features-content">
+                            <div className="progress"></div>
                             <div className="heading">
                                 <h1>Easy for Everybody</h1>
                                 <p>

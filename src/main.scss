@@ -2,6 +2,7 @@
 
 $navy: #011580;
 $sky: #edf2f6;
+$cyan: #009cc9;
 
 @function vw($px) {
     @return math.div($px, 1920px) * 100 * 1vw;
@@ -136,6 +137,16 @@ section.features {
             background: transparentize($navy, 0.9);
         }
 
+        .progress {
+            transform-origin: 0 0;
+            position: absolute;
+            left: vwmin(100px);
+            top: vw(100px);
+            width: 4px;
+            height: vwmin(230px);
+            background-color: $cyan;
+        }
+
         .heading {
             margin-bottom: vwmin(60px);
         }
@@ -169,7 +180,7 @@ section.features {
                 display: flex;
                 align-items: flex-start;
                 gap: 20px;
-                margin-bottom: vwmin(30px);
+                padding-bottom: vwmin(30px);
 
                 &::before {
                     content: "";
