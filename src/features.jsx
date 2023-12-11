@@ -36,7 +36,7 @@ export default function Features() {
 
         const timeline = gsap.timeline({
             scrollTrigger: {
-                markers: true,
+                // markers: true,
                 trigger: "section.features",
                 start: "top top+=1",
                 end: "+=400.1%",
