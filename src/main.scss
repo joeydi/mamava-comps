@@ -1,5 +1,6 @@
 @use "sass:math";
 
+$dark-navy: #434575;
 $navy: #011580;
 $sky: #edf2f6;
 $cyan: #009cc9;
@@ -97,6 +98,11 @@ section.features {
     p {
         margin: 0;
         font-size: vwmin(22px);
+        color: $dark-navy;
+    }
+
+    li {
+        color: $dark-navy;
     }
 
     .features-pin {
