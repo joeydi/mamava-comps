@@ -62,11 +62,11 @@ main {
 }
 
 section.hero {
-    margin: 40px 0 100px;
+    margin: vwmin(40px) 0 vwmin(100px);
 }
 
 section.usp-features {
-    margin: 100px 0 0;
+    margin: vwmin(100px) 0 0;
 }
 
 section.features {
@@ -217,6 +217,22 @@ section.features {
             object-fit: cover;
         }
     }
+}
+
+section.benefits {
+    margin: vwmin(100px) 0;
+}
+
+section.specs {
+    margin: vwmin(100px) 0;
+}
+
+section.conclusion {
+    margin: vwmin(100px) 0;
+}
+
+section.contact {
+    margin: vwmin(100px) 0;
 }
 
 footer {
