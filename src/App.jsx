@@ -25,9 +25,7 @@ function App() {
                     </div>
                 </section>
                 <section className="specs">
-                    <div className="container">
-                        <img src="/specs.png" width="3580" height="2100" />
-                    </div>
+                    <img src="/specs.png" width="3840" height="2100" />
                 </section>
                 <section className="conclusion">
                     <div className="container">
