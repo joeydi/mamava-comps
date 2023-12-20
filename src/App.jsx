@@ -29,7 +29,7 @@ function App() {
                 </section>
                 <section className="conclusion">
                     <div className="container">
-                        <img src="/conclusion.png" width="3580" height="520" />
+                        <img src="/conclusion.png" width="3580" height="1251" />
                     </div>
                 </section>
                 <section className="contact">

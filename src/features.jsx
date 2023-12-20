@@ -90,7 +90,7 @@ export default function Features() {
             ".progress",
             {
                 yPercent: 122,
-                scaleY: 1,
+                scaleY: 0.95,
                 ease: "power2.out",
                 duration: 1,
             },
@@ -132,7 +132,7 @@ export default function Features() {
             ".progress",
             {
                 yPercent: 156,
-                scaleY: 1.1,
+                scaleY: 1.25,
                 ease: "power2.out",
                 duration: 1,
             },
@@ -173,8 +173,8 @@ export default function Features() {
         timeline.to(
             ".progress",
             {
-                yPercent: 182,
-                scaleY: 0.9,
+                yPercent: 195,
+                scaleY: 1,
                 ease: "power2.out",
                 duration: 1,
             },
@@ -215,8 +215,8 @@ export default function Features() {
         timeline.to(
             ".progress",
             {
-                yPercent: 210,
-                scaleY: 0.9,
+                yPercent: 230,
+                scaleY: 1,
                 ease: "power2.out",
                 duration: 1,
             },
@@ -242,10 +242,7 @@ export default function Features() {
                             <div className="progress"></div>
                             <div className="heading">
                                 <h1>Easy for Everybody</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna.
-                                </p>
+                                <p>Intentionally designed for breastfeeding, built for facilities</p>
                             </div>
                             <div className="benefit benefit-1">
                                 <h2 onClick={clickHandler} data-href="#access">
@@ -253,22 +250,19 @@ export default function Features() {
                                     Access
                                 </h2>
                                 <ul>
-                                    <li>
-                                        Autonomous app-enabled entry for parents with Mamava’s Smart Access Technology or keyless
-                                        pin code.
-                                    </li>
-                                    <li>Streamlined and managed access for facilities.</li>
+                                    <li>Autonomous app-enabled entry for parents</li>
+                                    <li>Streamlined management for facilities</li>
                                 </ul>
                             </div>
                             <div className="benefit benefit-2">
                                 <h2 onClick={clickHandler} data-href="#assembly">
                                     <img src="/icon-assembly.svg" width="30px" height="30px" />
-                                    Assembly
+                                    Installation
                                 </h2>
                                 <ul>
-                                    <li>Assembles and ready for use in a few hours.</li>
-                                    <li>Eliminates permitting and construction disruption.</li>
-                                    <li>Professional install service available.</li>
+                                    <li>Assembles in a few hours</li>
+                                    <li>No permitting or construction disruption</li>
+                                    <li>Professional install service available</li>
                                 </ul>
                             </div>
                             <div className="benefit benefit-3">
@@ -277,8 +271,8 @@ export default function Features() {
                                     Maintenance
                                 </h2>
                                 <ul>
-                                    <li>Solid surfaces and nonabsorbent materials make for quick clean up.</li>
-                                    <li>Mamava Service Plans provide extra peace of mind.</li>
+                                    <li>Solid surfaces and nonabsorbent materials for simple clean up</li>
+                                    <li>Mamava Service Plans for extra peace of mind</li>
                                 </ul>
                             </div>
                             <div className="benefit benefit-4">
@@ -287,8 +281,8 @@ export default function Features() {
                                     Mobility
                                 </h2>
                                 <ul>
-                                    <li>Built-in caster wheels make it easy to move pod as needed. </li>
-                                    <li>Disassemble and store pod when not in use.</li>
+                                    <li>Caster wheels to move the pod as needed</li>
+                                    <li>Disassemble and store pod when not in use</li>
                                 </ul>
                             </div>
                         </div>
